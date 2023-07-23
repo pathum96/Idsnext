@@ -1,0 +1,14 @@
+<div class="layout">
+    <div class="row gx-5 p-4 bg-custom">
+        <h5 class="mb-4">Angular Crud Operation</h5>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="col-5 p-3 form-content">
+                <app-upsert-employee (onCreate)="onCreate()" [selectedEmployee]="selectedEmployee"
+                ></app-upsert-employee>
+            </div>
+            <div class="col-6 table-content">
+                <app-employee-list (onSelect)="onSelect($event)"></app-employee-list>
+            </div>
+        </div>
+    </div>
+</div>

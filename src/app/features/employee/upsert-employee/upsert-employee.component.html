@@ -1,0 +1,24 @@
+<form [formGroup]="employeeForm">
+    <div class="d-flex flex-column field mb-4">
+        <label for="username1" class="block mb-2">Name</label>
+        <input id="username1" type="username" aria-describedby="name" pInputText 
+        formControlName="name"/>
+    </div>
+
+    <div class="d-flex flex-column field mb-4">
+        <label for="username1" class="block mb-2">Designation</label>
+        <p-dropdown [options]="designations" formControlName="designation"
+        placeholder="Select a Designation"></p-dropdown>
+    </div>
+
+    <div class="d-flex flex-column field">
+        <label for="username1" class="block mb-2">Salary</label>
+        <p-inputNumber inputId="integeronly" formControlName="salary">
+        </p-inputNumber>
+    </div>
+</form>
+
+<div class="d-flex flex-row justify-content-end mt-5">
+    <button pButton pRipple type="button" label="Reset" class="p-button-outlined me-3" (click)="reset()"></button>
+    <button pButton pRipple type="button" label="Save" [disabled]="employeeForm.invalid" (click)="save()"></button>
+</div>

@@ -1,0 +1,46 @@
+.field {
+    .p-inputtext {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+    }
+
+    ::ng-deep .p-dropdown {
+        width: 100%;
+    }
+
+    ::ng-deep .p-inputnumber {
+        width: 100%;
+    }
+}
+
+.p-button {
+    width: 10rem;
+    background: #fc7a45;
+    border: 1px solid #fc7a45 ;
+}
+
+.p-button:enabled:active {
+    background: #fc7a45;
+    border-color: #fc7a45;
+}
+.p-button:enabled:hover {
+    background: #fc7a45;
+    border-color: #fc7a45;
+}
+
+.p-button-outlined {
+    width: 10rem;
+    background-color: transparent;
+    color: #fc7a45;
+}
+
+.p-button-outlined:enabled:active {
+    background: transparent;
+    border-color: #fc7a45;
+    color: #fc7a45;
+}
+.p-button-outlined:enabled:hover {
+    background: transparent;
+    border-color: #fc7a45;
+    color: #fc7a45;
+}

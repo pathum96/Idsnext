@@ -1,0 +1,19 @@
+.emp-table ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    background-color: #e6e6e6 !important;
+}
+
+.p-button-text {
+    background-color: transparent;
+    color: #fc7a45;
+}
+
+.p-button-text:enabled:active {
+    background: transparent;
+    border-color: #fc7a45;
+    color: #fc7a45;
+}
+.p-button-text:enabled:hover {
+    background: transparent;
+    border-color: #fc7a45;
+    color: #fc7a45;
+}
